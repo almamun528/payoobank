@@ -31,7 +31,7 @@
                  </section>
                  <!-- User activity Buttons Ends --><div class="divider"></div>
                   <!-- form start -->
-                 <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl mt-10">
+                 <div id="add-money-section" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl mt-10 ">
                     <form class="card-body">
                       <div class="form-control">
                         <label class="label">
@@ -54,10 +54,36 @@
                     </form>
                   </div>
                   <!-- Form ends -->
+                   <!-- !cash Out -->
+                   <div id="cashOut-Section" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl mt-10 hidden">
+                    <form class="card-body">
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Cash Out</span>
+                        </label>
+                        <input id="input-cash-out" type="number" placeholder="Amount" class="input input-bordered" autocomplete="off" required />
+                      </div>
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Pin</span>
+                        </label>
+                        <input id="input-cashout-pin" type="password" placeholder="Pin Number" class="input input-bordered" autocomplete="off" required />
+                        <label class="label">
+                          <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
+                        </label>
+                      </div>
+                      <div class="form-control mt-6">
+                        <button id="cash-out" class="btn btn-primary">Cash Out</button>
+                      </div>
+                    </form>
+                  </div>
+                   <!-- !cash Out ENDS-->
               </div>
             </div>
           </div>
     </main>
     <script src="/js/home.js"></script>
+    <script src="./js/home-cashout.js"></script>
+    <script src="/js/toggle.js"></script>
 </body>
 </html>
